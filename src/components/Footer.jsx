@@ -5,9 +5,6 @@ function Footer() {
         <p className="font-mono text-xs text-muted">
           © 2026 Zainab Aziz. All rights reserved.
         </p>
-        <p className="font-mono text-xs text-muted">
-          Built with React & Tailwind CSS
-        </p>
       </div>
     </footer>
   );
