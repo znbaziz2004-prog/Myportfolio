@@ -36,14 +36,7 @@ const projects = [
     github: "",
     demo: "",
   },
-  {
-    title: "Portfolio Website",
-    description:
-      "This site — a responsive personal portfolio built with React, Vite, and Tailwind CSS.",
-    tech: ["React", "Tailwind CSS", "Vite"],
-    github: "https://github.com/znbaziz2004-prog/portfolio",
-    demo: "",
-  },
+  
 ];
 
 function Projects() {
