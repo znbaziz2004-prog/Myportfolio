@@ -11,6 +11,20 @@ const projects = [
     featured: true,
   },
   {
+      title: "E-Commerce Store",
+      description:
+        "A full-stack e-commerce web application with user authentication, product listings, shopping cart, checkout, and order management.",
+      tech: "React • Node.js • Express • MongoDB",
+      github: "https://github.com/znbaziz2004-prog/e-commerce",
+    },
+    {
+      title: "Real-Time Communication App",
+      description:
+        "A real-time communication platform featuring video calling, screen sharing, file sharing, and real-time collaboration.",
+      tech: "React • Node.js • Socket.io • WebRTC",
+      github: "https://github.com/znbaziz2004-prog/Real-Time-Communication",
+    },
+  {
     title: "AI Learning Authenticity Evaluator",
     description:
       "An AI-powered app that evaluates learning authenticity and flags AI-generated submissions using the Gemini API.",
