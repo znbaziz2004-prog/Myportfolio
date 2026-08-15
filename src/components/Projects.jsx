@@ -1,5 +1,3 @@
-// TODO: Replace the "github" (and optional "demo") URLs below with your
-// real project links before publishing.
 const projects = [
   {
     title: "Information Security Project",
@@ -10,20 +8,25 @@ const projects = [
     demo: "",
     featured: true,
   },
+
   {
-      title: "E-Commerce Store",
-      description:
-        "A full-stack e-commerce web application with user authentication, product listings, shopping cart, checkout, and order management.",
-      tech: "React • Node.js • Express • MongoDB",
-      github: "https://github.com/znbaziz2004-prog/e-commerce",
-    },
-    {
-      title: "Real-Time Communication App",
-      description:
-        "A real-time communication platform featuring video calling, screen sharing, file sharing, and real-time collaboration.",
-      tech: "React • Node.js • Socket.io • WebRTC",
-      github: "https://github.com/znbaziz2004-prog/Real-Time-Communication",
-    },
+    title: "E-Commerce Store",
+    description:
+      "A full-stack e-commerce web application with user authentication, product listings, shopping cart, checkout, and order management.",
+    tech: ["React", "Node.js", "Express", "MongoDB"],
+    github: "https://github.com/znbaziz2004-prog/e-commerce",
+    demo: "",
+  },
+
+  {
+    title: "Real-Time Communication App",
+    description:
+      "A real-time communication platform featuring video calling, screen sharing, file sharing, and real-time collaboration.",
+    tech: ["React", "Node.js", "Socket.io", "WebRTC"],
+    github: "https://github.com/znbaziz2004-prog/Real-Time-Communication",
+    demo: "",
+  },
+
   {
     title: "AI Learning Authenticity Evaluator",
     description:
@@ -34,6 +37,7 @@ const projects = [
     demo: "",
     featured: true,
   },
+
   {
     title: "Restaurant Management System",
     description:
@@ -42,6 +46,7 @@ const projects = [
     github: "",
     demo: "",
   },
+
   {
     title: "Airport Management System",
     description:
@@ -50,7 +55,6 @@ const projects = [
     github: "",
     demo: "",
   },
-  
 ];
 
 function Projects() {
@@ -61,13 +65,14 @@ function Projects() {
         <p className="font-mono text-signal text-sm uppercase tracking-widest mb-3 text-center">
           [ Projects ]
         </p>
+
         <h2 className="font-display font-extrabold text-4xl md:text-5xl text-paper text-center mb-4">
           Selected work
         </h2>
+
         <p className="text-muted text-center max-w-2xl mx-auto mb-16">
-          A mix of full-stack builds and database systems, plus two
-          projects closer to my current focus — information security and
-          AI authenticity.
+          A mix of full-stack builds and database systems, plus projects
+          focused on information security, AI, and real-time communication.
         </p>
 
         <div className="grid md:grid-cols-2 gap-6">
@@ -77,7 +82,9 @@ function Projects() {
               key={index}
               className="group relative bg-surface border border-line rounded-xl p-8 hover:border-signal/60 transition-colors duration-300"
             >
+
               <span className="absolute top-0 left-0 w-5 h-5 border-t-2 border-l-2 border-signal opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+
               <span className="absolute bottom-0 right-0 w-5 h-5 border-b-2 border-r-2 border-signal opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
               {project.featured && (
@@ -95,39 +102,41 @@ function Projects() {
               </p>
 
               <div className="flex flex-wrap gap-2 mt-5">
-                {project.tech.map((t) => (
+                {project.tech.map((tech) => (
                   <span
-                    key={t}
+                    key={tech}
                     className="font-mono text-xs text-signal/90 bg-signal/10 rounded px-2 py-1"
                   >
-                    {t}
+                    {tech}
                   </span>
                 ))}
               </div>
 
               <div className="mt-8 flex gap-4">
-  {project.github && (
-    <a
-      href={project.github}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="bg-signal text-ink px-5 py-2 rounded-md font-mono text-sm font-semibold uppercase tracking-wide hover:bg-paper transition-colors"
-    >
-      GitHub ↗
-    </a>
-  )}
 
-  {project.demo && (
-    <a
-      href={project.demo}
-      target="_blank"
-      rel="noopener noreferrer"
-      className="border border-line px-5 py-2 rounded-md font-mono text-sm font-semibold uppercase tracking-wide text-paper hover:border-signal hover:text-signal transition-colors"
-    >
-      Live Demo
-    </a>
-  )}
-</div>
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-signal text-ink px-5 py-2 rounded-md font-mono text-sm font-semibold uppercase tracking-wide hover:bg-paper transition-colors"
+                  >
+                    GitHub ↗
+                  </a>
+                )}
+
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border border-line px-5 py-2 rounded-md font-mono text-sm font-semibold uppercase tracking-wide text-paper hover:border-signal hover:text-signal transition-colors"
+                  >
+                    Live Demo
+                  </a>
+                )}
+
+              </div>
 
             </div>
           ))}
